@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Langar&display=swap');
+
+    body {
+      background-color: #3D5E6C;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+
+    h1 {
+      font-family: 'Langar';
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    main {
+      width: 80%;
+      display: flex;
+      gap: 5rem;
+      justify-content: space-around;
+    }
+
+    .board {
+      font-family: 'Dongle';
+      min-height: 40rem;
+      min-width: 33%;
+      background-color: #D9D9D9;
+    }
+
+    .board h2 {
+      padding: 0;
+      margin: 0;
+      font-size: 3rem;
+      text-align: center;
+      background-color: #293D46;
+      color: #D9D9D9;
+    }
+
+    .task-list {
+      padding: 1rem;
+    }
+
+    .new-task-box {
+      background-color: #858585;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    input {
+      all: unset;
+      padding: 0;
+      margin: 0;
+    }
+
+    .new-task {
+      width: 100%;
+      background-color: #D9D9D9;
+      color: #545454;
+      font-size: 2rem;
+      padding: 0 0.5rem;
+    }
+
+    .do-box {
+      width: 100%;
+      height: 100%;
+      all: unset;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 1rem;
+      gap: 1rem;
+      font-size: 2rem;
+    }
+
+    .tarefa {
+      background-color: #C6C6C6;
+      padding: 0.5rem;
+      word-wrap: break-word;
+      cursor: grab;
+      position: relative;
+    }
+
+    .tarefa:hover {
+      background-color: #B9B9B9;
+    }
+
+    .btn-remover {
+      border: none;
+      padding: 0.5rem;
+      color: white;
+      cursor: pointer;
+      background-color: #293D46;
+    }
+    .btn-remover:hover {
+      background-color: #3D5E6C;
+    }
+
+    @media (max-width: 760px) {
+      body::after {
+        content: "Site ainda não disponivel para aparelhos mobile";
+        font-size: 2rem;
+        color: #B9B9B9;
+      }
+      main {
+        display: none;
+      }
+    }

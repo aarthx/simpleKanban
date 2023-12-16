@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/K.svg" type="image/x-icon">
+  <title>Kanban</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Kanban</h1>
+  <main>
+    <div class="board" id="doBoard">
+      <h2>Do</h2>
+      <div class="task-list">
+        <div class="new-task-box">
+          <input type="text" class="new-task" placeholder="Adicione uma nova tarefa" id="inputAddTarefa">
+          
+        </div>
+        <ul class="do-box" id="doBox">
+        
+        </ul>
+      </div>
+    </div>
+    <div class="board" id="doingBoard">
+      <h2>Doing</h2>
+      <div class="task-list">
+        <ul class="do-box" id="doingBox">
+      
+        </ul>
+      </div>
+      
+    </div>
+    <div class="board" id="doneBoard">
+      <h2>Done</h2>
+      <div class="task-list">
+        <ul class="do-box" id="doneBox">
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
